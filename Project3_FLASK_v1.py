@@ -2,6 +2,9 @@
 from pymongo import MongoClient
 from flask import Flask, jsonify
 from bson import json_util
+from flask_cors import CORS
+
+# Make sure to pip install flask-cors in your terminal if you haven't already
 
 
 #############################################################################
@@ -26,6 +29,8 @@ crime_by_time = db["chicago_crime_by_time"]
 #############################################################################
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Define a function to convert the collection data to a readable JSON format
 def json_convert(collection):
