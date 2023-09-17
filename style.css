@@ -1,0 +1,163 @@
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes changeBg {
+    0% {
+      background-image: url('image1.jpg');
+    }
+    100% {
+      background-image: url('image2.jpg');
+    }
+  }
+
+html {
+    height: 100%; 
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image: url('crime-scene-tape.png');
+    background-size: cover;
+}
+
+.maindiv {
+    width: 800px;
+    height: 2250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    background: linear-gradient(white, lightgrey);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.headerdiv {
+    animation: slideInLeft 1s ease-in-out forwards;
+    width: 98.8%;
+    height: 200px;
+    text-align: left;
+    padding-left: 10px;
+    background-image: url('container_image2.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid lightskyblue;
+}
+
+.subheaderdiv1 {
+    animation: slideInLeft 1s ease-in-out forwards;
+    color: white;
+    text-shadow:
+    -2px -2px 0 darkblue,
+    2px -2px 0 darkblue,
+    -2px 2px 0 darkblue,
+    2px 2px 0 darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+    font-style: italic;
+    text-align: left;
+    width: 97%;
+    padding-left: 25px;
+}
+
+.subheaderdiv2 {
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    color: yellow;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30pt;
+    border-top: 1px solid yellow;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.subheaderdiv3 {
+    animation: slideInLeft 2s ease-in-out forwards;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30pt;
+    border-bottom: 1px solid yellow;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    width: 50%;
+}
+.selectdiv {
+    animation: slideInLeft 1s ease-in-out forwards;
+    color: yellow;
+    border-top: 3px solid rgb(81, 177, 236);
+    border-bottom: 3px solid rgb(81, 177, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background: linear-gradient(darkblue, rgb(5, 5, 221));
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    width: 98%;
+}
+
+#communitySelector,
+#crime1Selector,
+#crime2Selector {
+    width: 200px;
+    height:20px;
+    padding: 0px;
+    background-color: white;
+    border-color: yellow;
+}
+
+.info {
+    animation: slideInRight 1s ease-in-out backwards;
+    border-top: 3px solid rgb(81, 177, 236);
+    border-bottom: 3px solid rgb(81, 177, 236);
+    background: linear-gradient(rgb(139, 118, 0), rgb(217, 221, 5));
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 25px;
+}
+
+.separator {
+    height: 10px
+}
+
+#chart-content {
+    animation: slideInLeft 1s ease-in-out backwards;
+    width: 95%;
+    height: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid darkblue;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#communityChart,
+#crime1Chart,
+#crime2Chart {
+    animation: slideInRight 1s ease-in-out backwards;
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-top: 1px solid darkblue;
+    border-bottom: 1px solid darkblue;
+}

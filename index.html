@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chicago Crime Data</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="maindiv">
+  <div class="headerdiv">
+    <div class="subheaderdiv1">"The Windy City"</div>
+    <div class="subheaderdiv2">Chicago, Illinois</div>
+    <div class="subheaderdiv3">CRIME DATA</div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="info">All Crime</div>
+
+  <div class="separator"></div>
+  
+  <div id="chart-content"></div>
+
+  <div class="separator"></div>
+
+  <div class="selectdiv">
+    <label for="communitySelector">Community No.:</label>
+    <select id="communitySelector"></select>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="communitybycrimechart">
+    <canvas id="communityChart"></canvas>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="selectdiv">
+    <label for="crime1Selector">Crime Type:</label>
+    <select id="crime1Selector"></select>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="crimebycommunitychart">
+    <canvas id="crime1Chart" ></canvas>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="selectdiv">
+    <label for="crime2Selector">Crime Type:</label>
+    <select id="crime2Selector"></select>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="crimebytimechart">
+    <canvas id="crime2Chart"></canvas>
+  </div>
+
+</div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script> 
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script type="text/javascript" src="Project3_JAVA_v1.js"></script>
+
+</body>
+
+</html>
+
+
+
